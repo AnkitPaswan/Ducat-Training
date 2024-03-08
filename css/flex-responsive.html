@@ -1,0 +1,63 @@
+<!-- 16/02/24 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media-query</title>
+
+    <style>
+        .parentDiv {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            align-content: center;
+        }
+
+        .childDiv {
+            display: flex;
+            height: 100px;
+            width: 100;
+            background-color: red;
+            color: white;
+            text-align: center;
+            font-size: 32px;
+        }
+
+
+        @media screen and (max-width: 800px) {
+
+            .childDiv {
+
+                background-color: green;
+                flex: 45%;
+            }
+
+            @media screen and (max-width: 500px) {
+
+                .childDiv {
+
+                    background-color: blue;
+                    flex: 100%;
+                }
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="parentDiv">
+
+        <div class="childDiv">Div 1</div>
+        <div class="childDiv">Div 2</div>
+        <div class="childDiv">Div 3</div>
+        <div class="childDiv">Div 4</div>
+        <div class="childDiv">Div 5</div>
+        <div class="childDiv">Div 6</div>
+    </div>
+</body>
+
+</html>

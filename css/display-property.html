@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display property</title>
+
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            margin: 10px;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        .none {
+            display: none;
+        }
+
+        .inline {
+            display: inline;
+            line-height: normal;
+        }
+
+        span {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            margin: 10px;
+            text-align: center;
+            line-height: 100px;
+            display: block;
+        }
+
+        .inline-block {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            margin: 10px;
+            text-align: center;
+            line-height: 100px;
+            display: inline-block;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="none">Div 1</div>
+    <div class="inline">Div 2</div>
+    <span>Div 3</span>
+    <div class="inline-block">Div 4</div>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!-- 16/02/24 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-box</title>
+
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .parentDiv {
+            display: flex;
+            /*height: 500px;*/
+            /* background: aqua;*/
+            /*flex-direction: row;
+            flex-wrap: wrap;*/
+
+            /*flex-flow: row wrap;*/
+            justify-content: center;
+            /*justify-content: space-around;*/
+            /*align-items: center;*/
+            /*align-content: center;*/
+            /*align-content: space-between;*/
+        }
+
+        .childDiv {
+            background: red;
+            color: white;
+            height: 100px;
+            width: 128px;
+            text-align: center;
+            line-height: 100px;
+            margin: 10px;
+            font-size: 32px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <section class="parentDiv">
+
+        <div class="childDiv">Div 1</div>
+        <div class="childDiv">Div 2</div>
+        <div class="childDiv">Div 3</div>
+        <div class="childDiv">Div 4</div>
+        <!-- <div class="childDiv">Div 5</div>
+        <div class="childDiv">Div 6</div> -->
+
+    </section>
+</body>
+
+</html>
