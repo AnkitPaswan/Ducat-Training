@@ -19,7 +19,7 @@
 
 
 //print the table using for-in loop
-let number = prompt("enter a number to print the table:-");
+// let number = prompt("enter a number to print the table:-");
 
 let table = [];
 for (let i = 1; i <= 10; i++) {
