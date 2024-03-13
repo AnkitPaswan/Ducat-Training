@@ -18,11 +18,12 @@ let object = {
   lname: "Paswan",
 };
 
-
+// for (const key in object) {  // .used for get static value
+//         console.log(key, object.key) ;
+// }
 for (const key in object) {
-        console.log(key, object[key]) ;
+  console.log(key, object[key]); // [] used to get dynamic value from object
 }
-
 
 // console.log(object.fname);
 
