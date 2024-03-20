@@ -20,20 +20,20 @@
 
 let fullname = "ankit paswan";
 
-// console.log(fullName.indexOf("n")); // 1
-// console.log(fullName.indexOf("z")); //-1
-// console.log(fullName.indexOf("kit")); //2
-// console.log(fullName.indexOf("sin")); //-1
+// console.log(fullname.indexOf("n")); // 1
+// console.log(fullname.indexOf("z")); //-1
+// console.log(fullname.indexOf("kit")); //2
+// console.log(fullname.indexOf("sin")); //-1
 
 //lastIndexOf
 
-// console.log(fullname.lastIndexOf("i"));
-// console.log(fullname.lastIndexOf("swa"));
+// console.log(fullname.lastIndexOf("n"));
+// console.log(fullname.lastIndexOf("asw"));
 // console.log(fullname.lastIndexOf("twa"));
 
 //includes() ;- its returns true or false
 
-// console.log(fullname.includes("a")); //true
+// console.log(fullname.includes( "a")); //true
 // console.log(fullname.includes("z")); //false
 // console.log(fullname.includes("kit")); //true
 // console.log(fullname.includes("zit")); //false
@@ -52,7 +52,7 @@ let fullname = "ankit paswan";
 
 // getting a substring
 //slice ;- it supports negative values
-// console.log(fullname.slice(0, 6)); //ankit
+console.log(fullname.slice(0, 6)); //ankit
 // console.log(fullname.slice(2, 6)); //kit
 // console.log(fullname.slice(6)); //paswan
 // console.log(fullname.slice(0, -1)); //ankit paswa
@@ -97,8 +97,8 @@ let fullname = "ankit paswan";
 
 //fromCdePointAt get from ASCII value
 
-let str = "DUCAT";
+// let str = "DUCAT";
 
-for (const character of str) {
-  console.log(character, character.codePointAt());
-}
+// for (const character of str) {
+//   console.log(character, character.codePointAt());
+// }

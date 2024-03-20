@@ -1,4 +1,3 @@
-
 //lower string to upper string using built-in function
 
 /*
@@ -13,7 +12,6 @@ console.log(result);  // Output: ANKIT PASWAN
 
 // -----------------------------------------------------
 
-
 //upper string to lower string using built-in function
 /*
 let str = "ANKIT PASWAN";
@@ -24,7 +22,7 @@ let result = str.at(0).toLowerCase();
 console.log(result);  // Output: ankit paswan
 */
 
-//lower string to upper string 
+//lower string to upper string
 // var str = "im mern stack trainee at ducat";
 
 // for (var i = 0; i < str.length; i++) {
@@ -33,8 +31,7 @@ console.log(result);  // Output: ankit paswan
 //     }
 // }
 
-
-//upper string to lower string 
+//upper string to lower string
 // var str = "IM MERN STACK TRAINEE AT DUCAT";
 
 // for (var i = 0; i < str.length; i++) {
@@ -42,4 +39,3 @@ console.log(result);  // Output: ankit paswan
 //         console.log(String.fromCharCode(str.charCodeAt(i) + 32));
 //     }
 // }
-
