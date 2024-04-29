@@ -1,0 +1,128 @@
+//create form
+// const form = document.createElement("form");
+// form.className = "d-flex";
+
+//create input box
+// const input = document.createElement("input");
+// input.className = "form-control me-2 mt-3 mb-3 mx-2";
+// input.id = "location";
+// input.type = "search";
+// input.placeholder = "Search";
+// input.ariaLabel = "Search";
+// input.style.border = "none";
+// input.style.boxShadow = "none";
+// input.style.borderRadius = "0";
+// input.style.borderBottom = "1px solid #ced4da";
+// //append to form
+// form.append(input);
+
+// //create button
+// const button = document.createElement("button");
+// button.className = "btn btn-outline-success mt-3 mb-3 mx-2";
+// button.id = "search";
+// button.type = "submit";
+// button.innerText = "Search";
+
+// //append to form
+// form.append(button);
+
+
+
+-------------------------------------------------------
+
+
+
+
+const loc = document.getElementById("location");
+const search = document.getElementById("search");
+const weather = document.getElementById("root");
+const form = document.getElementById("form");
+const API_KEY = "2d0b505bc82420738afcbd80308892e8";
+
+search.addEventListener("click", function () {
+  fetch(
+    `https://api.openweathermap.org/data/2.5/weather?q=${loc.value}&appid=${API_KEY}`
+  )
+    .then((response) => response.json())
+    .then((data) => {
+      const currentWeather = data.weather[0].description;
+      const icon = data.weather[0].icon;
+      const currentTemp = Math.round(data.main.temp - 273.15);
+
+      // //create parentdiv
+      const parentDiv = document.createElement("div");
+      parentDiv.className = "mt-5";
+      // //append to root
+      root.append(parentDiv);
+      console.log(parentDiv);
+
+      // //create card div
+      const card = document.createElement("div");
+      card.className = "card mx-auto";
+      card.style = "width: 15rem";
+
+      // //appent to parentdiv
+      parentDiv.append(card);
+
+      // weather.innerHTML = `
+      //           <p>Current weather: ${currentWeather}</p>
+      //           <p>Current temperature: ${currentTemp}°C</p>
+      //       `;
+    })
+    .catch((error) => {
+      weather.innerHTML = `<p>Error: ${error}</p>`;
+    });
+});
+
+// //create parentdiv
+// const parentDiv = document.createElement("div");
+// parentDiv.className = "mt-5";
+// //append to root
+// root.append(parentDiv);
+// console.log(parentDiv);
+
+// //create card div
+// const card = document.createElement("div");
+// card.className = "card mx-auto";
+// card.style = "width: 15rem";
+
+// //appent to parentdiv
+// // parentDiv.append(card);
+
+// //append to card
+// // card.append(form);
+
+// //image div
+// const image = document.createElement("img");
+// image.className = "card-img-top";
+// image.src = "https://placehold.co/400";
+// image.alt = "Card image cap";
+
+// //card body
+
+// const cardBody = document.createElement("div");
+// cardBody.className = "card-body";
+// //append to card div
+// card.append(image);
+// card.append(cardBody);
+
+// //h5
+// const h5 = document.createElement("h5");
+// h5.className = "card-title text-center";
+// h5.innerText = "35°C";
+
+// //p
+// const p = document.createElement("p");
+// p.className = "card-text text-center";
+// p.innerText = "Sky cloud";
+
+// //append to card body
+// cardBody.append(h5);
+// cardBody.append(p);
+
+-----------------------------------------------------------
+
+
+  // const p = document.createElement("p");
+      // p.innerText = `Current weather: ${data.weather[0].description}`;
+      // weather.append(p);
