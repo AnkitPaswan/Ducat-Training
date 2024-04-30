@@ -1,0 +1,61 @@
+
+<!-- event handeling -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 1way -->
+    <!-- <button onclick="console.log('button clicked')">click me</button> -->
+    <!-- <button onclick="buttonClicked('button 1')">button 1</button>
+    <button onclick="buttonClicked('button 2')">button 2</button>
+    <script>
+        function buttonClicked(button) {
+            console.log('button clicked' + button)
+        }
+        function buttonClicked(e) {
+            console.log(e);
+            console.log("button clicked");
+        }
+    </script> -->
+
+    <!-- 2nd way -->
+    <!-- <script>
+
+        let button = document.getElementById("button");
+
+        button.onclick = function (e) {
+            console.log(e);
+            console.log("button clicked");
+        }
+    </script> -->
+
+    <!-- 3rd way -->
+    <script>
+        // button.addEventListener("click", function (e) {
+        //     console.log(e);
+        //     console.log(event);
+        // })
+
+        //this
+        let button = document.getElementById("button");
+        button.onclick = function (e) {
+            console.log(this);//button
+        }
+        button.onclick =  (e)=> {
+            console.log(this); //window object
+        }
+          button.addEventListener("click", function (event) {
+            console.log(this);//button
+        })
+          button.addEventListener("click", (event) => {
+            console.log(this);//window
+        })
+    </script>
+
+</body>
+</html>
