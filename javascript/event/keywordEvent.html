@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input">
+    <script>
+
+        let input = document.getElementById("input");
+
+        //keypress
+        input.addEventListener("keypress", function(){
+            console.log("keypress event fired");
+            // console.log(event);
+            // console.log(event.key);
+            // console.log(event.keyCode);
+            // console.log(event.charCode);
+            // console.log(this.value);
+            console.log(event.target.value);
+        })
+
+        //keydown
+        input.addEventListener("keydown", function(){
+            console.log("keydown event fired");
+            // console.log(event);
+            // console.log(event.key);
+            // console.log(event.keyCode);
+            // console.log(event.charCode);
+            // console.log(this.value);
+            // console.log(event.target.value);
+        })
+
+        //keyup
+        input.addEventListener("keyup", function(){
+            console.log("keyup event fired");
+            // console.log(this.value);
+            // console.log(event.target.value);
+        })
+
+    </script>
+</body>
+</html>

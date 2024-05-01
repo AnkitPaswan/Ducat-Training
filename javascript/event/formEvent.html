@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="first_name" placeholder="First name" id="first_name">
+    <!-- <form action="" id="form">
+        <input type="text" name="first_name" placeholder="First name" id="first_name">
+        <hr>
+        <input type="text" name="last" placeholder="Last name" id="last">
+        <hr>
+        <input type="text" name="age" placeholder="Age" id="age">
+        <hr>
+        <button>Submit</button>
+    </form> -->
+    <script>
+        let form = document.getElementById("form");
+
+        //submit event
+
+    //     form.addEventListener("submit", function(e){
+    //         e.preventDefault();
+    //         console.log("form has been submitted");
+    //         // let first_name = document.getElementById("first_name").value;
+    //         // let last = document.getElementById("last").value;
+    //         // let age = document.getElementById("age").value;
+
+    //         // console.log(first_name, last, age);
+
+    //         //event
+    //         console.dir(event.target);
+            
+    //         for (const element of event.target) {
+    //             console.log(element.value);
+    //         }
+    //         //document.form
+    //         console.log(document.form);
+    //     for (const element of document.forms[0]) {
+    // console.log(element.value);
+    //     }  
+        
+    //      //document.forms[name]
+    //         console.log(document.form['form']);
+    //         for (const element of document.forms['form']) {
+    //     console.log(element.value);
+    //         }     
+    //     })
+
+    //onchange
+
+ let first_name = document.getElementById("first_name");
+ let file = document.getElementById("file");
+ first_name.addEventListener("change", function(e){
+    console.log("onchange event fired");
+     console.log(e.target.value);
+ })
+
+ file.addEventListener("change", function(e){
+    console.log("onchange event fired");
+     console.log(e.target.value);
+ })
+    //focus
+
+    // let first_name = document.getElementById("first_name);
+
+    // first_name.addEventListener("focus", function(){
+    //     console.log("focus event fired");
+    // })
+
+    //blur
+//     let first_name = document.getElementById("first_name);
+
+// first_name.addEventListener("blur", function(){
+//     console.log("blur event fired");
+// })
+
+
+
+    </script>
+</body>
+</html>
