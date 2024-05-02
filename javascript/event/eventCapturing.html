@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="parentDiv">
+        <div class="childDiv">
+<button>Click me</button>
+        </div>
+    </div>
+    <script>
+        let button = document.getElementById("button");
+        let childDIv = document.getElementById("button");
+        let parentDiv = document.getElementById("button");
+
+        button.addEventListener("click", function(){
+            event.stopImmediatePropagation();
+            console.log("button capturing");
+        },true)
+        childDIv.addEventListener("click", function(){
+            event.stopImmediatePropagation();
+            console.log("childDiv capturing");
+        },true)
+        parentDiv.addEventListener("click", function(){
+            event.stopImmediatePropagation();
+            console.log("parentDiv capturing");
+        },true)
+
+    </script>
+</body>
+</html>

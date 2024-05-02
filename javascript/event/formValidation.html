@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="form-div">
+    <form action="">
+        <div></div>
+    </form>
+</div>
+
+    <script>
+        let form = document.getElementById("form");
+
+        form.addEventListener("submit", function(event) {
+            for (const element of event.target) {
+                if (element.type !== "submit") {
+                    if (!element.value) {
+                        element.parentElement.classList.add("invalid");
+                        event.preventDefault();
+                    }else{
+                        element.parentElement.classList.remove("invalid");
+                    }
+                }
+            }
+        });
+
+        function checkValue(event) {
+            if (event.target.value) {
+                event.target.parentElement.classList.remove("invalid");
+            }else{
+                event.target.parentElement.classList.add("invalid");
+            }
+        }
+    </script>
+</body>
+</html>
