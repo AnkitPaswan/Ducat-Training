@@ -198,3 +198,63 @@
 // // console.log(Employee.counter);
 // console.log(Employee.getCounter());
 
+
+
+//abstract class and members
+
+// abstract class ParentClass {
+//     className = "ParentClass";
+//     abstract getClassName();
+//     testing(){
+//         console.log("testing");
+        
+//     }
+// }
+
+// class ChildClass extends ParentClass{
+//     getClassName() {
+//         console.log(this.className);
+//     }
+// }
+
+
+// let childClass = new ChildClass();
+// console.log(childClass);
+// childClass.getClassName();
+
+
+// abstract class A{
+//     abstract testing();
+// }
+
+// abstract class B extends A{
+//     abstract testing();
+// }
+
+// class C extends B{
+//     testing() {
+//         console.log("testing");
+        
+//     }
+// }
+
+
+//implements (Interface)
+interface CarInterface {
+    carName : string;
+    hasForWheels() : boolean;
+    hasSteering() : boolean;
+}
+
+class Car implements CarInterface{
+    carName : string;
+    hasForWheels(): boolean {
+        return true;
+    }
+    hasSteering(): boolean {
+        return true;
+    }
+}
+
+let car = new Car();
+console.log(car);
