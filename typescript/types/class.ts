@@ -240,21 +240,74 @@
 
 
 //implements (Interface)
-interface CarInterface {
-    carName : string;
-    hasForWheels() : boolean;
-    hasSteering() : boolean;
+// interface CarInterface {
+//     carName : string;
+//     hasForWheels() : boolean;
+//     hasSteering() : boolean;
+// }
+
+// class Car implements CarInterface{
+//     carName : string;
+//     hasForWheels(): boolean {
+//         return true;
+//     }
+//     hasSteering(): boolean {
+//         return true;
+//     }
+// }
+
+// let car = new Car();
+// console.log(car);
+
+// it supports multiple inheritance via interface
+// interface College{
+//     collegeName : string;
+//     getCollegeName() : string;
+// }
+// interface Sports{
+//     sportsName : string;
+//     getSportsName() : string;
+// }
+
+// class Student implements College,Sports {
+//     collegeName : string = "DUCAT";
+//     sportsName : string = "Cricket";
+
+//     getCollegeName() : string {
+//         return this.collegeName;
+//     }
+//     getSportsName() : string {
+//         return this.sportsName;
+//     }
+// }
+
+//- Generic Classes
+
+// let array : Array<number> = [10];
+
+// let array : Array<string> = ["10"];
+
+// let array : Array<any> = ["10",10,true];
+
+// function testing<T,U>(num1 :T,fname: U){
+//     console.log(num1,fname);
+    
+// }
+
+// testing<number,string>(10,"hello");
+// testing<string , string>("ducat", "ducat")
+
+
+class Employee<T> {
+    firstName : T;
+    lastName : T;
+
+    constructor(fname: T, lname: T){
+        this.firstName = fname;
+        this.lastName = lname;
+    }
 }
 
-class Car implements CarInterface{
-    carName : string;
-    hasForWheels(): boolean {
-        return true;
-    }
-    hasSteering(): boolean {
-        return true;
-    }
-}
+let emp = new Employee<string>("Ankit", "Paswan");
 
-let car = new Car();
-console.log(car);
+console.log(emp);
