@@ -1,0 +1,137 @@
+
+.main-header {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    width: 100%;
+    background-color: #FE4A67;
+    padding: 0 80px;
+    color: #FFF;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    z-index: 99;
+
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.left {
+    list-style-type: none;
+    gap: 15px;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.logo {
+    width: 50px;
+}
+
+.center {
+    position: absolute;
+    left: 40%;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style-type: none;
+}
+
+.center li {
+    cursor: pointer;
+    padding: 5px;
+}
+
+
+.center li:hover {
+    color: #252222;
+}
+
+.right {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style-type: none;
+}
+
+.right li {
+    cursor: pointer;
+    font-weight: 500;
+    gap: 30px;
+}
+
+.sign {
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 2px solid #252222;
+    padding: 4px 15px;
+    cursor: pointer;
+    color: white;
+    background-color: #252222;
+    border-radius: 20px;
+}
+
+.cart-icon {
+    position: relative;
+    cursor: pointer;
+    fill: currentColor;
+}
+
+.cart-icon span {
+    min-width: 20px;
+    text-align: center;
+    color: white;
+    background-color: #252222;
+    padding: 2.5px;
+    position: absolute;
+    top: -5px;
+    right: -12px;
+    font-size: 12px;
+    line-height: 1;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .main-header {
+        padding: 0 20px;
+    }
+
+    .header-content .right {
+        display: none;
+    }
+
+    .header-content .center {
+        gap: 10px;
+        left: 120px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .header-content .right {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+
+    .header-content .center {
+        display: none;
+    }
+}
