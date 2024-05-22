@@ -3,6 +3,8 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import Parents from "./components/classprops/Parents";
+// import Parent from "./components/props/Parent";
 // import FunctionalComponent from "./components/FunctionalComponent";
 // import ClassComponent from "./components/ClassComponent";
 
@@ -13,7 +15,8 @@ root.render(
     {/* <FunctionalComponent /> */}
     {/* <ClassComponent /> */}
 
-    <App />
+    {/* <App /> */}
+    <Parents />
   </React.StrictMode>
 );
 
