@@ -6,8 +6,10 @@ import reportWebVitals from "./reportWebVitals";
 // import Parent from "./components/props/Parent";
 // import FunctionalComponent from "./components/FunctionalComponent";
 // import ClassComponent from "./components/ClassComponent";
-import Parents from "./components/classprops/Parents";
-import App from "./components/App";
+// import Parents from "./components/classprops/Parents";
+// import App from "./components/class/App";
+// import App from "./components/functional/App";
+import App from "./lifecycle/class/App";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
