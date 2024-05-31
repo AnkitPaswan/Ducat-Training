@@ -10,7 +10,9 @@ import reportWebVitals from "./reportWebVitals";
 // import App from "./components/class/App";
 // import App from "./components/functional/App";
 // import App from "./lifecycle/class/App";
-import App from "./lifecycle/functional/App";
+// import App from "./lifecycle/functional/App";
+// import App from "./images/App";
+import App from "./styles/App";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
