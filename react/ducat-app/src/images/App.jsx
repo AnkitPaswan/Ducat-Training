@@ -21,7 +21,7 @@ export default function App() {
             <hr />
 
             {/* dynamic import */}
-            {/* <img src={require('./images/ss3.png')} alt="" srcSet='' /> */}
+            <img src={require('./images/ss3.png')} alt="" srcSet='' />
         </div>
     )
 }

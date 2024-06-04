@@ -12,7 +12,12 @@ import reportWebVitals from "./reportWebVitals";
 // import App from "./lifecycle/class/App";
 // import App from "./lifecycle/functional/App";
 // import App from "./images/App";
-import App from "./styles/App";
+// import App from "./styles/App";
+// import App from "./portals/App";
+// import App from "./ref/functional/App";
+// import App from "./ref/classComp/App";
+// import App from "./sideeffect/App";
+import App from "./reducer/App";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
