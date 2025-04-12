@@ -53,15 +53,15 @@
 // console.log("Random Number: " + x);
 
 // guessing game
-let secretNumber = 5;
-while (true) {
-  let userGuess = prompt("Guess a number");
-  if (userGuess == secretNumber) {
-    alert("Correct");
-    break;
-  } else if (userGuess > secretNumber) {
-    alert("Too high");
-  } else {
-    alert("Too low");
-  }
-}
+// let secretNumber = 5;
+// while (true) {
+//   let userGuess = prompt("Guess a number");
+//   if (userGuess == secretNumber) {
+//     alert("Correct");
+//     break;
+//   } else if (userGuess > secretNumber) {
+//     alert("Too high");
+//   } else {
+//     alert("Too low");
+//   }
+// }

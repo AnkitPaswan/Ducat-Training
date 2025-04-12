@@ -1,6 +1,5 @@
 // 26/02/2024
 
-
 //number
 
 let number = 10;
@@ -9,9 +8,9 @@ console.log(typeof number);
 console.log(number);
 
 //bigint:- it is introduced in ES-2020
-let bigNumber = BigInt('987654321987654321'); //1st method
+let bigNumber = BigInt("987654321987654321"); //1st method
 // var bigNumber = 11111111111111111111111111n; //2nd method
-console.log(typeof bigNumber)
+console.log(typeof bigNumber);
 
 console.log(bigNumber);
 
@@ -46,9 +45,6 @@ let string = "Hello World";
 
 console.log(typeof string, string[0]);
 
-
 //mutable
 
-
 //immutable
-

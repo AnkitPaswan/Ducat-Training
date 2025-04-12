@@ -2,8 +2,8 @@
 
 let price = null;
 
-let result = '';
+let result = "";
 
 result = price ?? 0;
 
-console.log("price: "+ result);
+console.log("price: " + result);

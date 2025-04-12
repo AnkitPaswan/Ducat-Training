@@ -4,9 +4,9 @@
 // console.log(arr.toString());
 
 //push
-let arr1 = [10, 20, 30, 40];
-let result = arr1.push(100, 200, 300);
-console.log(arr1, result);
+// let arr1 = [10, 20, 30, 40];
+// let result = arr1.push(100, 200, 300);
+// console.log(arr1, result);
 
 //pop
 // let arr2 = [10, 20, 30, 40];
@@ -28,9 +28,9 @@ console.log(arr1, result);
 //delete
 // let arr5 = [10, 20, 30, 40];
 // let result = arr5.splice(2, 1);
-// // let result = arr5.splice(-2, 1);
-// // result = arr5.splice(arr5.length - 1, 1);//pop
-// // result = arr5.splice(0,1);//shift
+// let result = arr5.splice(-3, 1);
+// result = arr5.splice(arr5.length - 1, 1); //pop
+// result = arr5.splice(0, 1); //shift
 // console.log(arr5, result);
 
 //update
@@ -46,6 +46,6 @@ console.log(arr1, result);
 // let result = arr7.splice(0, 0, 300, 400, 500, 600); //unshift
 // console.log(arr7, result);
 
-// let arr7 = ["apple", "banana", "mango"];
-// let fruits = ["orange", "pineapple"];
-// console.log([...arr7, ...fruits]);
+let arr7 = ["apple", "banana", "mango"];
+let fruits = ["orange", "pineapple"];
+console.log([...arr7, ...fruits]);

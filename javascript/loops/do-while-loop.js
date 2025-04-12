@@ -4,17 +4,16 @@
 //syntax
 
 // do {
-    
-// } while (condition);
 
+// } while (condition);
 
 //example:-
 
 let number = 10;
 
 do {
-    console.log(number);
-    number --;
+  console.log(number);
+  number--;
 } while (number > 10);
 
 console.log(number);
